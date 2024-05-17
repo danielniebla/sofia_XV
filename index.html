@@ -23,11 +23,24 @@
       }
 
       .content {
-        background: url(./to-do.png) no-repeat center/contain;
-        padding: 20px;
-        margin-top: 50px ;
-        width: 100%;
-        height: calc(100vh - 50px);
+        max-width: 430px;
+        height: auto;
+      }
+      .flex{
+        display: flex;
+        max-width: 430px;
+        height: 20vh;
+        margin: 0;
+      }
+      .img{
+        height: 20vh ;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      .imgT{
+        height: 45vh ;
+        max-width: 100%;
+        object-fit: contain;
       }
 
 
@@ -36,6 +49,19 @@
 <body > <!--  onload="pizarra()" -->    
   <div class="container">
     <div class="content">
+      <img src="top.png" alt="" class="imgT">
+      <div class="flex">
+        <a href="">
+          <img src="first.png" alt="" class="first img">
+        </a>
+        <img src="middle.png" alt="" class="img">
+        <a href="">
+          <img src="last.png" alt="" class="first img">
+        </a>
+      </div>
+      <img src="bottom.png" alt="" class="first img">
+
+
     </div>
   </div>
 </body>
